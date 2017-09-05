@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Happy Birthday Jun</title>
+
+
+<link rel="shortcut icon" href="bir.ico" />
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="balloon">
+        <div><span>☺</span>
+        </div>
+        <div><span>B</span>
+        </div>
+        <div><span>D</span>
+        </div>
+        <div><span>A</span>
+        </div>
+        <div><span>Y</span>
+        </div>
+        <div><span>!</span>
+        </div>
+    </div>
+     <h1 style="color: #c450f3">Happy Birthday Jun</h1>
+
+</div>
+<script>
+    
+</script>
+<script>
+    if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage('resize', "*");
+    }
+</script>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2013—10-02,</span><br />
+			<span class="space"/><span class="comments">*2017-09-08.</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> LI Chunliang<br />
+			Girl name = <span class="keyword">Mrs</span> LI Jun<br />
+			<span class="comments">//Today is a special day; </span><br />
+			The girl's birthday;<br />
+			
+			<span class="comments">// As time goes by, The boy still miss the girl.</span><br />
+			<span class="keyword">The boy</span> can not be separated <span class="keyword">the girl</span>;<br />
+			
+			<span class="comments">// But the boy was afraid to speak. </span><br />
+			<span class="comments">// The boy is willing to wait.</span><br />
+			The waiting is torture.<br />
+			
+			<span class="placeholder"/> But <span class="keyword">the boy</span> still love <span class="keyword">the girl</span></span><br />
+			<span class="placeholder"/><span class="comments">// The boy feel very happy<br />
+			<span class="placeholder"/>The boy has but one dream;<br />
+			<span class="comments">// The boy wants the girl could well have been happy.</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Jun, Happy birthday and love you forever and ever.<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Jun，I have fallen in love with you for
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Happy birthday and love you forever and ever.<br/>
+					<div class="signature">- Li Chunliang</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2013, 10, 02);
+together.setHours(0);
+together.setMinutes(0);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+<div style="text-align:center;clear:both">
+
+</div>
+</body>
+</html>
